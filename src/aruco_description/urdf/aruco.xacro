@@ -1,0 +1,29 @@
+<robot name="edumip" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="artag">
+        <link name="artag_link">
+            <visual>
+            <geometry>
+                <mesh filename="package://turtlebot_with_hokuyo_description/models/artag/meshes/artag.dae" />
+            </geometry>
+            </visual>   
+            <collision>
+                <geometry>
+                <mesh filename="package://turtlebot_with_hokuyo_description/models/artag/meshes/artag.dae" />
+            </geometry>
+            </collision>
+            <inertial>
+            <mass value="1" />
+            <inertia ixx="1" ixy="0.0" ixz="0.0"
+                    iyy="1" iyz="0.0"
+                    izz="1" />
+            </inertial>
+        </link>
+
+        <joint name="artag_joint" type="fixed">
+            <axis xyz="0 0 1" />
+            <origin xyz="0.7 0 0.5" rpy="0 -1.57 0"/>
+            <parent link="world"/>
+            <child link="artag_link"/>
+        </joint>
+    </xacro:macro>
+</robot>

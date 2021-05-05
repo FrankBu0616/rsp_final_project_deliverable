@@ -1,0 +1,7 @@
+rsp_turtlebot_msgs/goal_confirmation goal
+---
+rsp_turtlebot_msgs/result_confirmation result
+---
+rsp_turtlebot_msgs/feedback_confirmation feedback
+
+

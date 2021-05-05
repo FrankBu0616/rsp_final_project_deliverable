@@ -1,0 +1,6 @@
+<robot name="artag" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="$(find aruco_description)/urdf/aruco.xacro" />
+    <link name="world"/>
+    <xacro:artag>
+    </xacro:artag>
+</robot>

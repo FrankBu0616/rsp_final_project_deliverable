@@ -1,0 +1,7 @@
+rsp_turtlebot_msgs/goal_movement goal
+---
+rsp_turtlebot_msgs/result_movement result
+---
+rsp_turtlebot_msgs/feedback_movement feedback
+rsp_turtlebot_msgs/feedback_movement distance
+

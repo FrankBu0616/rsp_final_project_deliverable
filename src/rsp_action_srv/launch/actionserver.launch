@@ -1,0 +1,7 @@
+<launch>
+
+	<node name="actionsrv" pkg="rsp_action_srv" type="rsp_actionserver_node" />
+	<node name="rsp_reconfig" pkg="rsp_reconfiguration" type="reconfig_server_node" />
+	<node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" />
+
+</launch>

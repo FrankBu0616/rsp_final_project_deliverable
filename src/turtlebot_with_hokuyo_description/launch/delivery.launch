@@ -1,0 +1,7 @@
+
+<launch>
+    <include file="$(find rsp_gazebo_amcl)/launch/amcl.launch"/>
+    <include file="$(find turtlebot_with_hokuyo_description)/launch/aruco.launch"/>
+    <include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch"/>
+    <include file="$(find rsp_reconfiguration)/launch/rsp_reconfiguration.launch"/>
+</launch>

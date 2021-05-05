@@ -1,0 +1,6 @@
+<launch>
+        <include file="$(find aruco_description)/launch/aruco_upload.launch"/>
+        <node pkg="robot_state_publisher" type="robot_state_publisher" name="artag_state_pub"/>
+        <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_pub"/>
+        <!-- <node type="rviz" name="rviz" pkg="rviz"/> -->
+</launch>
