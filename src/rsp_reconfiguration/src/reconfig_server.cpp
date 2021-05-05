@@ -31,7 +31,12 @@ void server::callback(rsp_reconfiguration::rsp_reconfigConfig& config, uint32_t 
 			rsp_turtlebot_actions::rsp_turtlebot_movementResult result = *(ac_movement->getResult());
 			//ROS_INFO("%s",result.result.result);
 			//std::cout<< result.result.result <<std::endl;
-			ROS_INFO("Please confirm the package is received");
+			if(ac_movement->getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
+				ROS_INFO("Please confirm the package is received");
+			}
+			if(ac_movement->getState() == actionlib::SimpleClientGoalState::ABORTED){
+				ROS_INFO("Please go to check the robot");
+			}
 		}
 		
 
@@ -53,32 +58,7 @@ void server::callback(rsp_reconfiguration::rsp_reconfigConfig& config, uint32_t 
 			ROS_INFO("The robot gets back to home position");
 		}
 		}break;
-	case 4:
-		receiver_num.data = config.sender_req_sim;
-		pub_confirmation.publish(receiver_num);
-
-		
-		rsp_turtlebot_actions::rsp_turtlebot_movementGoal goal_receiver;
-		goal_receiver.goal.room = config.sender_req;
-		ac_movement->sendGoal(goal_receiver);
-		bool res = ac_movement->waitForResult();
-
-		if(res){
-			rsp_turtlebot_actions::rsp_turtlebot_movementResult result = *(ac_movement->getResult());
-			//ROS_INFO("%s",result.result.result);
-			//std::cout<< result.result.result <<std::endl;
-			ROS_INFO("Please confirm the package is received");
-		}
-		
-
-		}break;
-	case 8:
-		
-		break;
-/*	case 16:
-		
-		break;
-*/	
+	
 	}
 
 }

@@ -182,9 +182,12 @@ void server::goalCB_movement(){
 	as_movement->publishFeedback(feedback);
 	ac_movement->sendGoal(move_goal);
 	feedback.feedback.feedback = "Wait for the robot moving to the target position";
+	as_movement->publishFeedback(feedback);
 	if(goal.goal.room != "home"){
 		ROS_INFO("Delivery starts");
 	}
+	feedback.feedback.feedback = "The robot is delivering the package";
+	as_movement->publishFeedback(feedback);
 	bool res = ac_movement->waitForResult();
 	if(res){
 		success = true;
