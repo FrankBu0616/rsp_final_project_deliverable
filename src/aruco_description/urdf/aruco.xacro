@@ -21,7 +21,7 @@
 
         <joint name="artag_joint" type="fixed">
             <axis xyz="0 0 1" />
-            <origin xyz="0.7 0 0.5" rpy="0 -1.57 0"/>
+            <origin xyz="-6.5 -7.5 0.5" rpy="0 -1.57 0"/>
             <parent link="world"/>
             <child link="artag_link"/>
         </joint>
