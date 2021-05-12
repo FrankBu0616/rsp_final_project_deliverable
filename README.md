@@ -75,11 +75,13 @@ If running on multiple machines, follow [here](http://wiki.ros.org/ROS/Tutorials
 	- rsp_reconfig/sender_req: The room number for robot navigation goal.
 	
 **Rsp_turtlebot_actions** Actions for actionlib
+
 **rsp_turtlebot_bringup** Launch the necessary nodes and topics for turtblebot movement and laser scan
 	- Topic
 		-  /scan: laser scan information. 
  
 **Rsp_turtlebot_msgs** Messages for actionlib
+
 **turtlebot_with_hokuyo_description** Description file of our turtlebot (also contains the launch file for gazebo simulation and main launch file)
 
 
