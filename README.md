@@ -15,6 +15,7 @@ The following packages are required to run our package.
 -  Laser
 	-  `sudo apt-get install ros-kinetic-urg-node`
 	-  Add an ethernet connection as follows(for real robot only):
+	-  ![Alt text](image1.png?raw=true "Ethernet Setup")
 -  Camera
 	-  `sudo apt-get install ros-kinetic-openni-launch`
 	-  `sudo apt-get install ros-kinetic-aruco-ros`
