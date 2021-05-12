@@ -36,6 +36,7 @@ source devel/setup.bash
 ##### Real Robot
 On the laptop connected to Turtlebot and hokuyo laser (if Running ROS across multiple machines), for the robot
 `roslaunch  rsp_turtlebot_bringup minimal.launch`
+
 For ROS master (on the main control laptop): `roslaunch turtlebot_with_hokuyo_description delivery.launch`
 If running on multiple machines, follow [here](http://wiki.ros.org/ROS/Tutorials/MultipleMachines).
 
