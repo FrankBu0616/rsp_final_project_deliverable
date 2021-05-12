@@ -108,3 +108,6 @@ AR tag alignment (door open: enter the room)
 - Knocking doors (door closed)
 - AR tag alignment (door open: enter the room)
 - Phone app: https://github.com/ROS-Mobile/ROS-Mobile-Android
+
+**Hardware Status**:
+One of the turtlebot cannot move straight. 
