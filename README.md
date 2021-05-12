@@ -42,6 +42,7 @@ If running on multiple machines, follow [here](http://wiki.ros.org/ROS/Tutorials
 
 ## Packages
 **Aruco_description** AR tag description in gazebo simulation
+
 **Aruco_sub** AR tag subscriber that monitors the distance between the robot and the tag. Publish to topic /aruco_result: 
 - Topics:
 	- /aruco_result: a topic that is being published when the turtlebot is less than 2 meters away from the aruco marker to indicate delivery approaching.
