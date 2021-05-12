@@ -63,7 +63,9 @@ If running on multiple machines, follow [here](http://wiki.ros.org/ROS/Tutorials
 	- 	/receiver_confirmation: save receiver’s room number
  
 **Rsp_gazebo_amcl** AMCL localization
+
 **Rsp_gazebo_gmapping** gmapping for our turtlebot
+
 **Rsp_reconfiguration** 
 - Usage: Interface to enter room number and confirmation of delivery
 - Node: 
