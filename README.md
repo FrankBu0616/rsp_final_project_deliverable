@@ -88,6 +88,7 @@ If running on multiple machines, follow [here](http://wiki.ros.org/ROS/Tutorials
 
 ## Progress
 (Deliverables above the horizontal line is achieved.)
+
 **Minimum**:
 - Gazebo (Hackerman 1st floor) 
 - Urdf robot description (sensor)
